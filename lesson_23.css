@@ -1,0 +1,48 @@
+.parent {
+    width: 100px;
+    height: 10px;
+    display: flex;
+    /* background-color: yellow; */
+}
+.child1, .child2, .child3, .child4, .child5, .child6 {
+    width: 20px;
+    height: 10px;
+}
+.child1 {
+    background-color: red;
+}
+.child2 {
+    background-color: green;
+}
+.child3 {
+    background-color: blue;
+}
+.child4 {
+    background-color: purple;
+}
+.child5 {
+    background-color: pink;
+}
+.child6 {
+    background-color: orange;
+}
+@media (min-width: 320px) and (max-width:426px){
+    .parent {
+        flex-direction: column;
+    }
+}  
+@media (min-width: 426px) and (max-width:768px){
+    .parent {
+        width: 60px;
+        height: 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+@media (min-width: 768px){
+    .parent {
+        flex-direction: row;
+    }
+
+}
